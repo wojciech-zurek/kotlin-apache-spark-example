@@ -5,7 +5,7 @@ import org.apache.spark.api.java.JavaSparkContext
 fun main(args: Array<String>) = reduceExample()
 
 fun reduceExample() {
-    val sc = JavaSparkContext(LocalSparkSession.get("Reduce simple example").sparkContext())
+    val sc = JavaSparkContext(LocalSparkSession.get("Reduce example").sparkContext())
 
     val items = listOf("564943,43524,8744,XYZ,3533443,OODSN", "345443,5653,ZYZ,453343,SVS", "465766,85445,4653")
 

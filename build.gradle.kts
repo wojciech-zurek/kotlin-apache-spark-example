@@ -21,6 +21,7 @@ dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("org.apache.spark:spark-core_2.12:$sparkVersion")
     implementation("org.apache.spark:spark-sql_2.12:$sparkVersion")
+    implementation("org.apache.spark:spark-mllib_2.12:$sparkVersion")
 }
 
 tasks.withType<KotlinCompile> {
@@ -33,4 +34,8 @@ tasks.withType<Jar> {
 
         )
     }
+}
+
+tasks.shadowJar {
+    isZip64 = true
 }

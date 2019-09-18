@@ -31,3 +31,9 @@ kotlin-spark-example
 ```bash
     java -cp build/libs/kotlin-spark-example-1.0-SNAPSHOT-all.jar eu.wojciechzurek.spark.SQLSchemaExampleKt
 ```
+
+### Run MLlib Correlation example
+
+```bash
+    java -cp build/libs/kotlin-spark-example-1.0-SNAPSHOT-all.jar eu.wojciechzurek.spark.CorrelationExampleKt
+```
