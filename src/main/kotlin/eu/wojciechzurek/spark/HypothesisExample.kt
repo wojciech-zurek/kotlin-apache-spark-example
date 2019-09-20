@@ -29,11 +29,11 @@ fun hypothesisExample() {
 
     val fields = arrayOf(
         StructField("label", DataTypes.DoubleType, true, Metadata.empty()),
-        StructField("data", VectorUDT(), true, Metadata.empty()))
+        StructField("features", VectorUDT(), true, Metadata.empty()))
     val schema = StructType(fields)
 
     val dataFrame = sparkSession.createDataFrame(rows, schema)
-    val row = ChiSquareTest.test(dataFrame, "data", "label").head()
+    val row = ChiSquareTest.test(dataFrame, "features", "label").head()
 
     row.let {
         println("Result pValues: ${it[0]}")

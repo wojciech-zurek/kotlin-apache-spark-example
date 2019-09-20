@@ -32,14 +32,20 @@ kotlin apache spark example
     java -cp build/libs/kotlin-apache-spark-example-1.0-SNAPSHOT-all.jar eu.wojciechzurek.spark.SQLSchemaExampleKt
 ```
 
-### Run MLlib Correlation example
+### Run ML Correlation example
 
 ```bash
     java -cp build/libs/kotlin-apache-spark-example-1.0-SNAPSHOT-all.jar eu.wojciechzurek.spark.CorrelationExampleKt
 ```
 
-### Run MLlib Hypothesis(ChiSquareTest) example    
+### Run ML Hypothesis(ChiSquareTest) example    
 
 ```bash
     java -cp build/libs/kotlin-apache-spark-example-1.0-SNAPSHOT-all.jar eu.wojciechzurek.spark.HypothesisExampleKt
+```
+
+### Run ML ALS example    
+
+```bash
+    java -cp build/libs/kotlin-apache-spark-example-1.0-SNAPSHOT-all.jar eu.wojciechzurek.spark.ALSExampleKt
 ```
